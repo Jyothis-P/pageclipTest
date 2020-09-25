@@ -1,0 +1,47 @@
+<html>
+
+<head>
+  <title>PageClip</title>
+  <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+</head>
+
+<body>
+
+
+  <form action="https://send.pageclip.co/sEtpCdmwuWmTpOfEf55sUBKpKf8B0djF/Registraion" class="pageclip-form"
+    method="post">
+    <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
+    <input type="text" name="name" value="Roscoe Jones" />
+    <input type="email" name="email" value="roscoe@example.com" />
+
+    <!-- This button will have a loading spinner. Keep the inner span for best results. -->
+    <button type="submit" class="pageclip-form__submit" , onclick="submitForm()">
+      <span>Send</span>
+    </button>
+  </form>
+
+
+  <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8">
+
+
+  </script>
+  <script>
+    // submitForm = () => {
+
+    //   window.location.href = "https://www.instamojo.com/@make_a_ton_2020/lec926518bb7c408d8ee1af1a6a79a20b/";
+
+    // }
+
+    var form = document.querySelector('.pageclip-form')
+    Pageclip.form(form, {
+      onSubmit: function (event) { console.log('iuadiu')},
+      onResponse: function (error, response) {
+        console.log('resodjsd');
+        console.log(response);
+       },
+      successTemplate: '<span>Thank you!</span>'
+    })
+  </script>
+</body>l̥
+
+</html>
